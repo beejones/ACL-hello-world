@@ -1,0 +1,21 @@
+{
+    "endpoints": {
+        "/heartbeat": {
+            "get": {
+                "js_module": "endpoints/app.js",
+                "js_function": "heartbeat",
+                "forwarding_required": "sometimes",
+                "redirection_strategy": "none",
+                "authn_policies": [],
+                "mode": "readonly",
+                "openapi": {
+                    "responses": {
+                        "200": {
+                            "description": "Generate a heartbeat response"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "private": false,
+    "scripts": {
+      "build": "rollup --config && cp app.json dist/ && node build_bundle.js dist/",
+      "bundle": "node build_bundle.js dist"
+    },
+    "type": "module",
+    "engines": {
+      "node": ">=16"
+    },
+    "dependencies": {
+      "@microsoft/ccf-app": "5.0.7"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "28.0.2",
+      "@rollup/plugin-node-resolve": "15.3.0",
+      "@rollup/plugin-typescript": "12.1.0",
+      "@types/node": "22.10.5",
+      "rollup": "4.34.6",
+      "tslib": "2.7.0",
+      "typescript": "5.7.3"
+    }
+  }
